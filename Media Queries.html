@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flex Box</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<style type="text/css">
+		.container{
+			width:100%;
+			height:auto;
+			background:#007bbf;
+			display:flex;
+			flex-direction:row;
+			justify-content:space-around;
+			flex-wrap:wrap;
+		}
+		.box{
+		width:27vw;
+		height:400px;
+		background:yellow;
+		margin:20px;
+		font-size:50px;
+		box-sizing:border-box;
+		border:solid black 5px;
+		text-align:center;
+		padding-top:150px;
+		
+		}
+		
+		@media(max-width:1200px){
+		.box{
+		width:31.5vw;
+		
+		}
+		}
+		@media(max-width:400px){
+		.box{
+		width:94vw;
+		
+		}
+		}
+		@media(max-width:800px){
+		.box{
+		width:47vw;
+		
+		}
+		}
+	
+	
+	
+	
+	</style>
+	<body>
+		<div class="container">
+			<div class="box">A</div>
+			<div class="box">B</div>
+			<div class="box">C</div>
+			<div class="box">D</div>
+			<div class="box">E</div>
+			<div class="box">F</div>
+			<div class="box">G</div>
+			<div class="box">H</div>
+			<div class="box">I</div>
+
+		
+	
+	
+	
+	</body>
+	</html>
