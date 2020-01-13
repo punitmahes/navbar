@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flex Box</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<style type="text/css">
+
+.grid {
+  background-color: blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+	
+}
+.grid .item
+{
+
+  padding-top:  130px;
+padding-bottom: 130px;
+  width: 23.5vw;
+  background-color: white;
+  margin-top: 2vh;
+  font-size: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+@media all and (min-width:1281px)
+{
+  .grid .item:nth-child(6n-3)
+  {
+    margin-right: 24.5vw;
+  }
+  .grid .item:nth-child(6n-2)
+  {
+    margin-left: 25.5vw;
+  }
+}
+@media all and (max-width:1281px) and (min-width:955px)
+{
+.grid .item
+  {
+    width:31.5vw;
+  }
+  .grid .item:nth-child(4n-2)
+  {
+    margin-right: 33vw;
+  }
+  .grid .item:nth-child(4n-1)
+  {
+    margin-left: 33vw;
+  }
+}
+@media all and (max-width:955px) and (min-width:636px)
+{
+.grid .item
+  {
+      width:47vw;
+  }
+  .grid .item:nth-child(2n-1)
+  {
+    margin-right: 50vw;
+  }
+  .grid .item:nth-child(even)
+  {
+    margin-left: 50vw;
+  }
+}
+@media all and (max-width:636px)
+{
+.grid .item{
+  width:94vw;
+  }
+}
+body {
+  margin:0;
+  background-color: black;
+}
+	
+	
+	
+	</style>
+	<body>
+		<div class="grid">
+			<div class="item">A</div>
+			<div class="item">B</div>
+			<div class="item">C</div>
+			<div class="item">D</div>
+			<div class="item">E</div>
+			<div class="item">F</div>
+			<div class="item">G</div>
+			<div class="item">H</div>
+			<div class="item">I</div>
+			<div class="item">J</div>
+			<div class="item">K</div>
+			<div class="item">L</div>
+			
+		</div>
+		
+	
+	
+	
+	</body>
+	</html>
